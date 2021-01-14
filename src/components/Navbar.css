@@ -12,7 +12,8 @@
   background-position: center;
   background-size: cover;
   padding: 20px 0;
-  background-color: #e4e4e4;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
 }
 
 .header-title {
@@ -115,7 +116,6 @@
 
 .nav-link-item-active:hover {
   color: rgb(109, 109, 109);
-  text-decoration: none;
 }
 
 /* Fixing menu */
@@ -169,9 +169,10 @@
 
   .nav-list-item-active:hover,
   .nav-list-item-inactive:hover {
-    border-bottom: solid 6px rgb(98, 201, 249);
-    filter: drop-shadow(3px 3px 8px rgba(98, 201, 249, 0.671));
-    transition: filter 200ms;
+    text-decoration: none;
+  }
+  .nav-link-item-inactive > a {
+    text-decoration: none;
   }
 
   .nav-link,
@@ -183,6 +184,6 @@
     padding-left: 25px;
     padding-right: 25px;
     color: #323639;
-    text-decoration: none;
+    text-decoration: unset;
   }
 }

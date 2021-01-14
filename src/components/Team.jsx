@@ -6,14 +6,8 @@ function Team() {
     <main className='team-main'>
       <article className='team-history'>
         <div className='team-presentation'>
-          <h2 className='team-h2'>Présentation de l'équipe</h2>
-          <p>
-            Party of a simple adventure with friends in April 2015, The
-            Traveling Taste Buds became a business in November 2020. Following
-            the many cooking recipes that have reached us on our contact form on
-            the first site, the idea came to us of creating a second site which
-            allow us to list thousands of different recipes.
-          </p>
+          <h1>Présentation de l'équipe</h1>
+          <p>Les bras cassés</p>
         </div>
       </article>
 
@@ -23,13 +17,9 @@ function Team() {
           alt='Cédric Priouret'
           title='Cédric Priouret'
         />
-        <h3>Cédric Priouret</h3>
+        <h2>Cédric Priouret</h2>
         <p className='left-text'>
-          Chef for 25 years in renowned restaurants (The Golden Wave in
-          St-Tropez, Alain Ducasse in Paris but also Jean Georges in New-York
-          and Club Gascon in London). Due to health problems, I stopped working
-          in the kitchen. I now devote myself 100% to the management of the site
-          Travelers Taste Buds.
+          J'en peux plus de ma team, aidez moi s'il vous plaît
         </p>
         <div className='social-icons-team'>
           <li>
@@ -50,11 +40,9 @@ function Team() {
           alt='Matisse Famularo'
           title='Matisse Famularo'
         />
-        <h3>Matisse Famularo</h3>
+        <h2>Mathias Famularo</h2>
         <p className='right-text'>
-          I am the Web Development Manager of the site. Before becoming a
-          developer, I was a pastry chef; I also take care of all the dessert
-          recipes.
+          Expert comptable.(Confiez-moi votre argent, je saurai en prendre soin)
         </p>
         <div className='social-icons-team'>
           <li>
@@ -75,12 +63,10 @@ function Team() {
           alt='Justine Pain'
           title='Justine Pain'
         />
-        <h3>Justine Pain</h3>
+        <h2>Justine Pain</h2>
         <p className='left-text'>
-          I am the owner of the restaurant "Furia de Mar" in Lisbon, Portugal.
-          Portuguese gastronomy specialist (they nickname me "The King of Cod")
-          It is with real pleasure that I joined the team of "Traveling Taste
-          Buds" to transmit my knowledge and my passion.
+          Donnez moi de l'argent svp je veux manger des pizzas(en vrai je
+          préfère les sandwich triangle sur l'aire d'autoroute).
         </p>
         <div className='social-icons-team'>
           <li>
@@ -101,15 +87,8 @@ function Team() {
           alt='Cyrille Fabre'
           title='Cyrille Fabre'
         />
-        <h3>Cyrille Fabre</h3>
-        <p className='right-text'>
-          I am part of the starting team of the creation of the site 1 of the
-          Traveling Taste Buds. I am always in contact with my friends Floran,
-          Justine and Corentin who have created a training school to become a
-          cook : the &#8220;Delicious Cook School&#8220;. Sometimes,they advise
-          me and give me their opinion. I take care of the promotion of the site
-          and social networks.
-        </p>
+        <h2>Cyrille Fabre</h2>
+        <p className='right-text'>Blagues nulles à chier. (j'avoue)</p>
         <div className='social-icons-team'>
           <li>
             <a href='https://github.com/Cissou13'>
@@ -117,7 +96,7 @@ function Team() {
             </a>
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/cyrille-fabre-bbb46b78/'>
+            <a href='https://www.linkedin.com/in/cyrille-fabre/'>
               <i className='fab fa-linkedin'></i>
             </a>
           </li>

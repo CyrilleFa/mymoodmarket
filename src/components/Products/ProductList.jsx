@@ -40,19 +40,18 @@ class ProductList extends React.Component {
           <button id='sort-btn'>Catégories</button>
         </section>
         <section className='emotions-list'>
-          <p>Nos émotions iront ici</p>
+          {products.map((product) => (
+            <Link to={`/products/${product.name}-${product.id}`}>
+              <Product
+                key={product.id}
+                id={product.id}
+                name={product.name}
+                price={product.price}
+                image_url={product.image_url}
+              />
+            </Link>
+          ))}
         </section>
-        {products.map((product) => (
-          <Link to={`/product/${product.name}-${product.id}`}>
-            <Product
-              key={product.id}
-              id={product.id}
-              name={product.name}
-              price={product.price}
-              image_url={product.image_url}
-            />
-          </Link>
-        ))}
       </main>
     );
   }

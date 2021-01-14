@@ -39,7 +39,7 @@ class Slider extends React.Component {
             <img
               className='d-block w-100'
               src='https://www.cyrillefabre.com/HostingImages/Decu.png'
-              alt='Decouragé'
+              alt='Decu'
             />
 
             <Carousel.Caption>
@@ -53,7 +53,7 @@ class Slider extends React.Component {
             <img
               className='d-block w-100'
               src='https://www.cyrillefabre.com/HostingImages/Desole.png'
-              alt='Decouragé'
+              alt='Desole'
             />
 
             <Carousel.Caption>
@@ -67,7 +67,7 @@ class Slider extends React.Component {
             <img
               className='d-block w-100'
               src='https://www.cyrillefabre.com/HostingImages/Embarrasse.png'
-              alt='Decouragé'
+              alt='Embarrasse'
             />
 
             <Carousel.Caption>
@@ -80,8 +80,8 @@ class Slider extends React.Component {
           <Carousel.Item>
             <img
               className='d-block w-100'
-              src='https://www.cyrillefabre.com/HostingImages/Excité.png'
-              alt='Decouragé'
+              src='https://www.cyrillefabre.com/HostingImages/Excite.png'
+              alt='Excite'
             />
 
             <Carousel.Caption>

@@ -47,6 +47,41 @@
   margin: 0;
 }
 
-.emotions-list {
+.emotion {
   text-align: center;
+}
+
+.emotions-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding: 20px 40px;
+}
+
+.emotion-pic {
+  max-width: 250px;
+  padding: 10px 10px;
+}
+
+.emotion-pre-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+.details-and-cart {
+  color: white;
+  display: flex;
+}
+
+/* VERSION DESKTOP */
+
+@media only screen and (min-width: 1085px) {
+  .emotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 40px;
+  }
 }

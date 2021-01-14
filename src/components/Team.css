@@ -1,4 +1,4 @@
-v.team-h2 {
+.team-h2 {
   width: 100%;
   margin: 2rem 0;
   text-align: center;
@@ -10,6 +10,11 @@ v.team-h2 {
 
 .team-presentation p {
   text-align: justify;
+}
+
+.team-presentation h1 {
+  font-family: 'Leckerli One';
+  text-align: center;
 }
 
 .team-presentation img {

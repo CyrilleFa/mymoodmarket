@@ -25,7 +25,7 @@ class Navbar extends React.Component {
         <Link to='/'>
           <img
             className='logo-navbar'
-            src=' https://www.cyrillefabre.com/HostingImages/Logo300x300.png'
+            src='https://www.cyrillefabre.com/HostingImages/Logo300x300.png'
             alt='Logo My Mood Market'
           />
         </Link>
