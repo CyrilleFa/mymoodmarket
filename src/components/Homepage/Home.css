@@ -1,0 +1,63 @@
+/* SLOGAN */
+
+.container-slogan {
+  text-align: center;
+  background-color: rgba(242, 159, 5, 0.8);
+  padding: 40px 0;
+}
+
+.container-slogan h1 {
+  max-width: 50%;
+  margin: 7% 25%;
+}
+
+/* COMMENT çA FONCTIONNE ?*/
+
+.container-how {
+  text-align: center;
+  background-color: #dcf2ac;
+}
+
+/* SLIDER IMG */
+
+.d-block {
+  display: block;
+  /* margin-left: -60px;
+  margin-right: auto; */
+  max-width: 375px;
+}
+
+/* Bouton */
+
+.product-btn {
+  border-radius: 25px;
+  padding: 10px 75px;
+  background-color: white;
+  font-weight: 900;
+  color: rgba(242, 159, 5, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.product-btn:active {
+  outline-style: none;
+}
+
+.titre-how {
+  font-family: 'Fredoka One', cursive;
+  font-size: 44px;
+  margin: 0;
+}
+
+.chapitre-how {
+  font-family: 'Lobster', cursive;
+  font-size: 32px;
+  margin: 0;
+}
+
+.texte-how {
+  font-family: 'Duru Sans';
+  font-size: 20px;
+  text-align: center;
+}

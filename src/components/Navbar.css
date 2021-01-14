@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@600&display=swap');
-
 /********************************
 -           BANNER
 ********************************/
@@ -10,32 +7,23 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   width: 100%;
-  height: 9em;
-
-  background-image: url(../assets/bg-image2.jpg);
+  height: 10em;
   background-position: center;
   background-size: cover;
+  background-color: rgb(0, 0, 0);
 }
 
 .header-title {
-  font-family: 'Berkshire Swash', cursive;
-  text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px,
-    #000000 2px -2px;
-
   text-align: center;
-  color: #f2cd61;
-  font-size: 40px;
-
-  padding: 1em 0em;
-  padding-right: 1em;
+  font-size: 45px;
+  font-family: 'Fredoka One', cursive;
+  color: white;
 }
 
 .logo {
   display: flex;
   height: 75px;
-  margin: 8px;
 }
 
 /* ------ Desktop version ------ */
@@ -49,7 +37,7 @@
   }
 
   .header-title {
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Leckerli One', cursive;
     color: #f2cd61;
     font-size: 470%;
 
@@ -81,14 +69,10 @@
   padding: 7px 14px;
   margin-right: 25px;
   max-height: 100;
-
-  color: #62c9fa;
+  color: white;
   background-color: #333;
-
   border-radius: 5px;
-  border: 1px solid #f2cd61;
   cursor: pointer;
-
   text-decoration: none;
   font-size: 13px;
 }
@@ -99,7 +83,6 @@
 
 .nav-list-inactive {
   position: absolute;
-
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -110,33 +93,31 @@
   height: auto;
   position: absolute;
   right: 0;
-  transition: opacity 0.5s ease-in-out;
-  margin-top: 363px;
-  width: 100%;
+  transition: opacity 0.4s ease-in-out;
+  margin-top: 430px;
+  width: 600px;
   z-index: 3000;
   list-style-type: none;
 }
 
 .nav-list-item-active {
+  font-family: 'Duru Sans', sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 10px 20px;
-
-  background-color: rgba(131, 216, 255, 0.97);
+  padding: 30px 20px;
+  background-color: rgb(22, 22, 22);
   transition: filter 400ms;
-
   font-size: 20px;
-  font-family: 'Pridi', serif;
 }
 
 .nav-link-item-active {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .nav-link-item-active:hover {
-  color: whitesmoke;
+  color: rgb(109, 109, 109);
   text-decoration: none;
 }
 
@@ -152,14 +133,12 @@
     width: 100%;
     height: 22%;
     margin-top: 297px;
-
     display: flex;
     justify-content: space-evenly;
     position: absolute;
 
-    background-image: url(../assets/texture.jpg);
+    /* background-image: url(../assets/texture.jpg); */
     background-size: cover;
-
     list-style-type: none;
     opacity: 1;
   }
@@ -174,7 +153,6 @@
     padding-top: 22px;
     padding-left: 18px;
     padding-right: 18px;
-
     font-size: 20px;
     font-family: 'Pridi', serif;
     background-color: unset;
@@ -194,73 +172,7 @@
   .nav-link-item-inactive {
     padding-left: 25px;
     padding-right: 25px;
-
     color: white;
     text-decoration: none;
-  }
-}
-
-/********************************
--           SEARCHBAR
-********************************/
-
-/* ------ Mobile version ------ */
-
-.search-bar {
-  display: none;
-}
-
-/* ------ Desktop version ------ */
-
-@media only screen and (min-width: 1085px) {
-  #cardName {
-    cursor: text;
-    border-radius: 20px;
-    width: 60%;
-    height: 25px;
-    font-weight: bold;
-    background: rgb(60, 36, 13);
-    background: linear-gradient(
-      180deg,
-      rgba(60, 36, 13, 1) 0%,
-      rgba(104, 62, 22, 1) 35%,
-      rgba(60, 36, 13, 1) 100%
-    );
-    color: #f2cd61;
-    border-color: #ffd65c;
-
-    padding-left: 10px;
-    margin: 0px 2.5%;
-  }
-
-  #cardName:focus {
-    outline: 0;
-  }
-  #cardName::placeholder {
-    color: #f2cd61;
-    font-family: Pridi, serif;
-  }
-
-  .search-bar {
-    display: contents;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5px;
-  }
-
-  #search-button {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-
-    background-color: rgba(98, 201, 249, 0.514);
-    border-radius: 30%;
-    border-width: 5px;
-    border-color: rgba(98, 201, 249, 0.514);
-    transition: filter 300ms;
-  }
-
-  #search-button:hover {
-    cursor: pointer;
-    filter: opacity(90%);
   }
 }

@@ -10,7 +10,7 @@ class Slider extends React.Component {
 
   render() {
     return (
-      <div className='container-slider'>
+      <section className='container-slider'>
         <Carousel>
           <Carousel.Item>
             <img
@@ -50,8 +50,7 @@ class Slider extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        ;
-      </div>
+      </section>
     );
   }
 }

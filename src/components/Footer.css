@@ -2,10 +2,13 @@
   width: 100%;
 }
 
+.copyright {
+  font-family: 'Leckerli One', cursive;
+}
+
 .social-container {
   background: #434343;
   padding: 4px 40px;
-  margin-top: 50px;
 }
 .social-follow {
   text-align: center;

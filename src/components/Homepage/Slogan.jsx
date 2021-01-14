@@ -9,10 +9,10 @@ class Slogan extends React.Component {
 
   render() {
     return (
-      <div className='container-slogan'>
-        <h1>Slogan qui a disparu</h1>
-        <button className='product-btn'>Voir les produits !</button>
-      </div>
+      <section className='container-slogan'>
+        <h1>Ressentez de nouvelles émotions</h1>
+        <button className='product-btn'>Voir nos produits</button>
+      </section>
     );
   }
 }

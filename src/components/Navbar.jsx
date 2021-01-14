@@ -53,9 +53,9 @@ class Navbar extends React.Component {
                 this.setState({ active: newRollMenu });
               }}
             >
-              Advanced search{' '}
+              Nos Produits{' '}
               <span role='img' aria-label='emoji'>
-                🔎
+                📦
               </span>
             </Link>
           </li>
@@ -68,9 +68,9 @@ class Navbar extends React.Component {
                 this.setState({ active: newRollMenu });
               }}
             >
-              Random card{' '}
+              Ma Bibliothèque{' '}
               <span role='img' aria-label='emoji'>
-                🎲
+                🎶
               </span>
             </Link>
           </li>
@@ -83,24 +83,9 @@ class Navbar extends React.Component {
                 this.setState({ active: newRollMenu });
               }}
             >
-              Deck building{' '}
+              Mon Panier{' '}
               <span role='img' aria-label='emoji'>
-                🃏
-              </span>
-            </Link>
-          </li>
-          <li className={navItemActive}>
-            <Link
-              to='/tournament'
-              className={navLinkActive}
-              onClick={() => {
-                const newRollMenu = !active;
-                this.setState({ active: newRollMenu });
-              }}
-            >
-              Tournaments{' '}
-              <span role='img' aria-label='emoji'>
-                🎪
+                🛒
               </span>
             </Link>
           </li>
