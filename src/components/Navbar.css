@@ -1,154 +1,266 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@600&display=swap');
 
-.navbar {
+/********************************
+-           BANNER
+********************************/
+
+/* ------ Mobile version ------ */
+.header {
   display: flex;
-  align-items: left;
+  align-items: center;
+  justify-content: space-around;
+
   width: 100%;
-  background-color: #434343;
-  margin-bottom: 4rem;
+  height: 9em;
+
+  background-image: url(../assets/bg-image2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.home-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.header-title {
+  font-family: 'Berkshire Swash', cursive;
+  text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px,
+    #000000 2px -2px;
 
-.navbar-logo {
-  max-width: 60%;
-  justify-content: center;
-}
-
-.navbar li {
-  display: inline-block;
-  margin-left: 50px;
-  font-size: 1.4em;
-}
-
-.navbar li a {
-  margin: 1em 1em 1em 0.2em;
-  color: #f46263;
-}
-
-.title {
-  align-items: center;
-  justify-content: center;
-  font-family: 60px 'Open Sans';
-  color: #fff;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.menucenter {
-  flex: 1;
-  display: flex;
-  flex-direction: column-reverse;
-  text-align: left;
-}
-
-button.menu-icon {
-  display: none;
-}
-
-.title h1 {
-  margin-right: 450px;
   text-align: center;
+  color: #f2cd61;
+  font-size: 40px;
+
+  padding: 1em 0em;
+  padding-right: 1em;
 }
 
-/************************ 
-HREF UNDERLINE ANIMATION
-************************/
+.logo {
+  display: flex;
+  height: 75px;
+  margin: 8px;
+}
 
-.cool-link {
-  display: inline-block;
-  color: #f46263;
+/* ------ Desktop version ------ */
+
+@media only screen and (min-width: 1085px) {
+  .header {
+    height: 22em;
+    position: relative;
+    display: flex;
+    background-size: cover;
+  }
+
+  .header-title {
+    font-family: 'Berkshire Swash', cursive;
+    color: #f2cd61;
+    font-size: 470%;
+
+    padding-bottom: 110px;
+    padding-left: 15%;
+    padding-right: 13%;
+  }
+
+  .logo {
+    display: flex;
+    height: 8em;
+    margin-bottom: 3%;
+  }
+
+  .logo:hover {
+    filter: contrast(120%);
+  }
+}
+
+/********************************
+-           NAVBAR
+********************************/
+
+/* ------ Mobile version ------ */
+
+.rollmenu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 7px 14px;
+  margin-right: 25px;
+  max-height: 100;
+
+  color: #62c9fa;
+  background-color: #333;
+
+  border-radius: 5px;
+  border: 1px solid #f2cd61;
+  cursor: pointer;
+
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.rollmenu:focus {
+  outline: currentColor;
+}
+
+.nav-list-inactive {
+  position: absolute;
+
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.nav-list-active {
+  opacity: 1;
+  height: auto;
+  position: absolute;
+  right: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 363px;
+  width: 100%;
+  z-index: 3000;
+  list-style-type: none;
+}
+
+.nav-list-item-active {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+
+  background-color: rgba(131, 216, 255, 0.97);
+  transition: filter 400ms;
+
+  font-size: 20px;
+  font-family: 'Pridi', serif;
+}
+
+.nav-link-item-active {
+  color: black;
   text-decoration: none;
 }
 
-.cool-link::after {
-  content: '';
-  display: block;
-  width: 0;
-  margin-top: 2px;
-  height: 2px;
-  background: #f46263;
-  transition: width 1s;
+.nav-link-item-active:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
-.cool-link:hover::after {
-  width: 100%;
-  transition: width 1s;
-}
+/* ------ Desktop version ------ */
 
-/************************ 
-******VERSION MOBILE*****
-************************/
-
-@media only screen and (max-width: 376px) {
-  .title h1 {
-    font-size: 1.2rem;
-    padding: 30px;
-    text-align: left;
-    margin: 0;
-  }
-
-  .navbar {
-    position: relative;
-  }
-
-  .navbar img {
+@media only screen and (min-width: 1085px) {
+  .rollmenu {
     display: none;
   }
 
-  button.menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    padding: 0;
-    background: transparent;
-    border: none;
-    outline: none;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
+  .nav-list-active,
+  .nav-list-inactive {
     width: 100%;
-    height: 500px;
+    height: 22%;
+    margin-top: 297px;
+
+    display: flex;
+    justify-content: space-evenly;
     position: absolute;
-    top: 80px;
-    left: -100%;
+
+    background-image: url(../assets/texture.jpg);
+    background-size: cover;
+
+    list-style-type: none;
     opacity: 1;
-    transition: all 0.5s ease;
   }
 
-  .nav-menu.active {
-    background: #434343;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
+  ul {
+    padding-inline-start: 0;
   }
 
-  .fa-bars,
-  .fa-times {
-    margin-right: -10px;
-    padding: 10px;
-    color: #f46263;
-    font-size: 1.5rem;
+  .nav-list-item-active,
+  .nav-list-item-inactive {
+    display: block;
+    padding-top: 22px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    font-size: 20px;
+    font-family: 'Pridi', serif;
+    background-color: unset;
+  }
+
+  .nav-list-item-active:hover,
+  .nav-list-item-inactive:hover {
+    border-bottom: solid 6px rgb(98, 201, 249);
+    filter: drop-shadow(3px 3px 8px rgba(98, 201, 249, 0.671));
+    transition: filter 200ms;
+  }
+
+  .nav-link,
+  .nav-link-item:hover,
+  .nav-link-item:visited,
+  .nav-link-item-active,
+  .nav-link-item-inactive {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    color: white;
+    text-decoration: none;
   }
 }
 
-/************************ 
-******VERSION TABLETTE *****
-************************/
+/********************************
+-           SEARCHBAR
+********************************/
 
-@media only screen and (min-width: 377px) and (max-width: 1024px) {
-  .title h1 {
-    text-align: center;
+/* ------ Mobile version ------ */
+
+.search-bar {
+  display: none;
+}
+
+/* ------ Desktop version ------ */
+
+@media only screen and (min-width: 1085px) {
+  #cardName {
+    cursor: text;
+    border-radius: 20px;
+    width: 60%;
+    height: 25px;
+    font-weight: bold;
+    background: rgb(60, 36, 13);
+    background: linear-gradient(
+      180deg,
+      rgba(60, 36, 13, 1) 0%,
+      rgba(104, 62, 22, 1) 35%,
+      rgba(60, 36, 13, 1) 100%
+    );
+    color: #f2cd61;
+    border-color: #ffd65c;
+
+    padding-left: 10px;
+    margin: 0px 2.5%;
+  }
+
+  #cardName:focus {
+    outline: 0;
+  }
+  #cardName::placeholder {
+    color: #f2cd61;
+    font-family: Pridi, serif;
+  }
+
+  .search-bar {
+    display: contents;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+
+  #search-button {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+
+    background-color: rgba(98, 201, 249, 0.514);
+    border-radius: 30%;
+    border-width: 5px;
+    border-color: rgba(98, 201, 249, 0.514);
+    transition: filter 300ms;
+  }
+
+  #search-button:hover {
+    cursor: pointer;
+    filter: opacity(90%);
   }
 }
