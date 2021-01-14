@@ -14,7 +14,7 @@ class Slider extends React.Component {
         <Carousel>
           <Carousel.Item>
             <img
-              className='d-block w-1'
+              className='d-block w-100'
               src='https://www.cyrillefabre.com/HostingImages/Blagueur.png'
               alt='Blagueur'
             />
@@ -25,7 +25,7 @@ class Slider extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className='d-block w-1'
+              className='d-block w-100'
               src='https://www.cyrillefabre.com/HostingImages/Calin.png'
               alt='Calin'
             />
@@ -37,13 +37,55 @@ class Slider extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className='d-block w-1'
-              src='https://www.cyrillefabre.com/HostingImages/Decourage.png'
+              className='d-block w-100'
+              src='https://www.cyrillefabre.com/HostingImages/Decu.png'
               alt='Decouragé'
             />
 
             <Carousel.Caption>
-              <h3>Decouragé</h3>
+              <h3>Decu</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className='d-block w-100'
+              src='https://www.cyrillefabre.com/HostingImages/Desole.png'
+              alt='Decouragé'
+            />
+
+            <Carousel.Caption>
+              <h3>Désolé</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className='d-block w-100'
+              src='https://www.cyrillefabre.com/HostingImages/Embarrasse.png'
+              alt='Decouragé'
+            />
+
+            <Carousel.Caption>
+              <h3>Embarrassé</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className='d-block w-100'
+              src='https://www.cyrillefabre.com/HostingImages/Excité.png'
+              alt='Decouragé'
+            />
+
+            <Carousel.Caption>
+              <h3>Excité</h3>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>

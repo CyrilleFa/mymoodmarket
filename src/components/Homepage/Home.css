@@ -2,28 +2,71 @@
 
 .container-slogan {
   text-align: center;
-  background-color: rgba(242, 159, 5, 0.8);
+  background-color: #fbda61;
+  background-image: linear-gradient(
+    45deg,
+    rgba(251, 217, 96, 0.9) 0%,
+    rgba(255, 90, 205, 0.9) 100%
+  );
   padding: 40px 0;
 }
 
 .container-slogan h1 {
   max-width: 50%;
   margin: 7% 25%;
+  color: white;
+  letter-spacing: 2px;
 }
 
 /* COMMENT çA FONCTIONNE ?*/
 
 .container-how {
   text-align: center;
-  background-color: #dcf2ac;
+  background-color: #b8b0d9;
+  padding: 5% 0;
 }
 
-/* SLIDER IMG */
+.titre-how {
+  font-family: 'Leckerli One', cursive;
+  font-size: 44px;
+  margin: 0;
+  padding: 20px 10px;
+  letter-spacing: 0.5px;
+  color: #436381;
+}
 
+.chapitre-how {
+  font-family: 'Lobster', cursive;
+  font-size: 32px;
+  margin: 0;
+  padding: 20px 0;
+  color: #436381;
+}
+
+.texte-how {
+  font-family: 'Duru Sans';
+  font-size: 20px;
+  max-width: 80%;
+  margin: 0 10%;
+  color: #382b8c;
+}
+
+/* SLIDER */
+
+.carousel-item {
+  background-color: #d0e4d9;
+}
+
+/* TITRE + TEXT */
+
+/* PREV, NEXT, INDICATORS */
+
+/* IMG */
 .d-block {
   display: block;
-  /* margin-left: -60px;
-  margin-right: auto; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 375px;
 }
 
@@ -32,9 +75,9 @@
 .product-btn {
   border-radius: 25px;
   padding: 10px 75px;
-  background-color: white;
+  background-color: rgba(82, 40, 159, 0.7);
   font-weight: 900;
-  color: rgba(242, 159, 5, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   letter-spacing: 1px;
   border: none;
@@ -44,20 +87,13 @@
   outline-style: none;
 }
 
-.titre-how {
-  font-family: 'Fredoka One', cursive;
-  font-size: 44px;
-  margin: 0;
-}
+/************************ 
+******VERSION DESKTOP*****
+************************/
 
-.chapitre-how {
-  font-family: 'Lobster', cursive;
-  font-size: 32px;
-  margin: 0;
-}
-
-.texte-how {
-  font-family: 'Duru Sans';
-  font-size: 20px;
-  text-align: center;
+@media only screen and (min-width: 1085px) {
+  .header-title {
+    display: block;
+    color: #323639;
+  }
 }

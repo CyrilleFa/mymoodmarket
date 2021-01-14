@@ -11,19 +11,17 @@
   height: 10em;
   background-position: center;
   background-size: cover;
-  background-color: rgb(0, 0, 0);
+  padding: 20px 0;
+  background-color: #e4e4e4;
 }
 
 .header-title {
-  text-align: center;
-  font-size: 45px;
-  font-family: 'Fredoka One', cursive;
-  color: white;
+  display: none;
 }
 
-.logo {
+.logo-navbar {
   display: flex;
-  height: 75px;
+  height: 150px;
 }
 
 /* ------ Desktop version ------ */
@@ -37,22 +35,19 @@
   }
 
   .header-title {
-    font-family: 'Leckerli One', cursive;
-    color: #f2cd61;
-    font-size: 470%;
-
-    padding-bottom: 110px;
-    padding-left: 15%;
-    padding-right: 13%;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Fredoka One', cursive;
+    color: black;
   }
 
-  .logo {
+  .logo-navbar {
     display: flex;
     height: 8em;
     margin-bottom: 3%;
   }
 
-  .logo:hover {
+  .logo-navbar:hover {
     filter: contrast(120%);
   }
 }
@@ -94,14 +89,14 @@
   position: absolute;
   right: 0;
   transition: opacity 0.4s ease-in-out;
-  margin-top: 430px;
-  width: 600px;
+  margin-top: 620px;
+  width: 1085px;
   z-index: 3000;
   list-style-type: none;
+  min-width: 650px;
 }
 
 .nav-list-item-active {
-  font-family: 'Duru Sans', sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
@@ -109,11 +104,13 @@
   background-color: rgb(22, 22, 22);
   transition: filter 400ms;
   font-size: 20px;
+  overflow: hidden;
 }
 
 .nav-link-item-active {
   color: white;
   text-decoration: none;
+  margin: 0;
 }
 
 .nav-link-item-active:hover {
@@ -121,6 +118,21 @@
   text-decoration: none;
 }
 
+/* Fixing menu */
+
+@media only screen and (max-width: 650px) {
+  .nav-list-active {
+    opacity: 1;
+    height: auto;
+    position: absolute;
+    right: 0;
+    transition: opacity 0.4s ease-in-out;
+    margin-top: 620px;
+    width: 650px;
+    z-index: 3000;
+    list-style-type: none;
+  }
+}
 /* ------ Desktop version ------ */
 
 @media only screen and (min-width: 1085px) {
@@ -130,14 +142,13 @@
 
   .nav-list-active,
   .nav-list-inactive {
+    font-family: 'Duru Sans', sans-serif;
     width: 100%;
     height: 22%;
     margin-top: 297px;
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-
-    /* background-image: url(../assets/texture.jpg); */
     background-size: cover;
     list-style-type: none;
     opacity: 1;
@@ -150,9 +161,7 @@
   .nav-list-item-active,
   .nav-list-item-inactive {
     display: block;
-    padding-top: 22px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding: 11px 18px;
     font-size: 20px;
     font-family: 'Pridi', serif;
     background-color: unset;
@@ -170,9 +179,10 @@
   .nav-link-item:visited,
   .nav-link-item-active,
   .nav-link-item-inactive {
+    font-family: 'Duru Sans', sans-serif;
     padding-left: 25px;
     padding-right: 25px;
-    color: white;
+    color: #323639;
     text-decoration: none;
   }
 }

@@ -24,9 +24,9 @@ class Navbar extends React.Component {
       <nav className='header'>
         <Link to='/'>
           <img
-            className='logo'
+            className='logo-navbar'
             src=' https://www.cyrillefabre.com/HostingImages/Logo300x300.png'
-            alt=' '
+            alt='Logo My Mood Market'
           />
         </Link>
         <h1 className='header-title'>My Mood Market</h1>
@@ -46,7 +46,7 @@ class Navbar extends React.Component {
         <ul className={navIsActive}>
           <li className={navItemActive}>
             <Link
-              to='/research'
+              to='/products'
               className={navLinkActive}
               onClick={() => {
                 const newRollMenu = !active;
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
           </li>
           <li className={navItemActive}>
             <Link
-              to='/random'
+              to='/library'
               className={navLinkActive}
               onClick={() => {
                 const newRollMenu = !active;
@@ -76,7 +76,7 @@ class Navbar extends React.Component {
           </li>
           <li className={navItemActive}>
             <Link
-              to='/deckbuilding'
+              to='/basket'
               className={navLinkActive}
               onClick={() => {
                 const newRollMenu = !active;
@@ -86,6 +86,36 @@ class Navbar extends React.Component {
               Mon Panier{' '}
               <span role='img' aria-label='emoji'>
                 🛒
+              </span>
+            </Link>
+          </li>
+          <li className={navItemActive}>
+            <Link
+              to='/team'
+              className={navLinkActive}
+              onClick={() => {
+                const newRollMenu = !active;
+                this.setState({ active: newRollMenu });
+              }}
+            >
+              L'Équipe{' '}
+              <span role='img' aria-label='emoji'>
+                🧑‍🤝‍🧑
+              </span>
+            </Link>
+          </li>
+          <li className={navItemActive}>
+            <Link
+              to='/contact'
+              className={navLinkActive}
+              onClick={() => {
+                const newRollMenu = !active;
+                this.setState({ active: newRollMenu });
+              }}
+            >
+              Contact{' '}
+              <span role='img' aria-label='emoji'>
+                ✉️
               </span>
             </Link>
           </li>

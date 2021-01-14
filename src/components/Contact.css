@@ -9,8 +9,18 @@ textarea {
 }
 
 .searchButton-form {
-  margin: 10px;
-  align-self: center;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 10px 50px;
+  background-color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.ContactForm {
+  background-color: #f88360;
 }
 
 .ContactForm textarea {
@@ -19,15 +29,17 @@ textarea {
 }
 
 .contactform-title h2 {
+  font-family: 'Leckerli One', cursive;
   padding: 20px 0;
   text-align: center;
+  color: #333;
 }
 
 /************************ 
 ******VERSION DESKTOP*****
 ************************/
 
-/* @media only screen and (min-width: 1085px) {
+@media only screen and (min-width: 1085px) {
   .ContactForm {
     display: flex;
     flex-direction: column;
@@ -36,7 +48,7 @@ textarea {
 
   .contactform-container {
     width: 40%;
-    boackground-color: #cccccc;
+    background-color: #e4e4e4;
     padding: 1.25em;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -49,19 +61,12 @@ textarea {
     flex-direction: column;
   }
 
-  .contactform-title {
-    padding-bottom: 20px;
-    color: #797876;
-    text-transform: uppercase;
-  }
-
   .form-control {
     width: 100%;
     background: transparent;
     border: none;
     outline: none;
     border-bottom: 1px solid #434343;
-    color: #e4685d;
     font-size: 18px;
     margin-bottom: 16px;
   }
@@ -71,40 +76,23 @@ textarea {
   }
 
   .ContactForm textarea {
-    height: 150px;
-  }
-
-  .ContactForm input::placeholder,
-  textarea::placeholder {
-    color: #e4685d;
+    width: 100%;
   }
 
   .searchButton-form {
-    align-self: flex-end;
-    width: 100px;
-    box-shadow: inset 0px 1px 0px 0px #f7c5c0;
-    background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
-    background-color: #fc8d83;
-    border-radius: 6px;
+    margin: 5px;
+    border-radius: 25px;
+    padding: 10px 50px;
+    background-color: white;
+    font-weight: 900;
+    color: #f88360;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     border: none;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #b23e35;
-  }
-
-  .searchButton-form:hover {
-    background: linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
-    background-color: #e4685d;
   }
 
   .searchButton-form:active {
     position: relative;
     top: 1px;
   }
-} */
+}

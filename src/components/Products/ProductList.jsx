@@ -1,35 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 import Product from './Product';
-require('dotenv').config();
+import { Link } from 'react-router-dom';
+import './ProductList.css';
 
 class ProductList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       filter: null,
-      products: [
-        {
-          id: 9,
-          name: 'rage',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          price: 300,
-          image_url: 'https://www.cyrillefabre.com/HostingImages/Fache.png',
-          audio_url: 'https://example.com',
-          category_id: 2,
-        },
-        {
-          id: 10,
-          name: 'jalousie',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          price: 250,
-          image_url: 'https://www.cyrillefabre.com/HostingImages/Decourage.png',
-          audio_url: 'https://example.com',
-          category_id: 2,
-        },
-      ],
+      products: [],
     };
   }
 
@@ -38,12 +18,14 @@ class ProductList extends React.Component {
   }
 
   getRandomProductList() {
+    const host = process.env.REACT_APP_API_HOST;
+    console.log(host);
     axios
-      .get(`${process.env.API_HOST}/api/emotions`)
+      .get(`${host}/api/emotions`)
       .then((res) => res.data)
       .then((data) => {
         this.setState({
-          list: data,
+          products: data,
         });
       });
   }
@@ -51,17 +33,27 @@ class ProductList extends React.Component {
   render() {
     const { products } = this.state;
     return (
-      <div className='ProductList'>
+      <main className='productlist-container'>
+        <h1>Toutes nos émotions en stock</h1>
+        <section className='btn-container'>
+          <button id='filter-btn'>Trier</button>
+          <button id='sort-btn'>Catégories</button>
+        </section>
+        <section className='emotions-list'>
+          <p>Nos émotions iront ici</p>
+        </section>
         {products.map((product) => (
-          <Product
-            key={product.id}
-            id={product.id}
-            name={product.name}
-            price={product.price}
-            image_url={product.image_url}
-          />
+          <Link to={`/product/${product.name}-${product.id}`}>
+            <Product
+              key={product.id}
+              id={product.id}
+              name={product.name}
+              price={product.price}
+              image_url={product.image_url}
+            />
+          </Link>
         ))}
-      </div>
+      </main>
     );
   }
 }

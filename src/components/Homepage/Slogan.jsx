@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 class Slogan extends React.Component {
@@ -10,8 +11,10 @@ class Slogan extends React.Component {
   render() {
     return (
       <section className='container-slogan'>
-        <h1>Ressentez de nouvelles émotions</h1>
-        <button className='product-btn'>Voir nos produits</button>
+        <h1>VIVEZ DE NOUVELLES EMOTIONS</h1>
+        <Link to='/products'>
+          <button className='product-btn'>Voir nos produits</button>
+        </Link>
       </section>
     );
   }

@@ -1,20 +1,49 @@
-.footer-container {
+.footer-container,
+.copyright {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e4e4e4;
+  padding: 30px;
+  color: #e4e4e4;
 }
 
-.copyright {
-  font-family: 'Leckerli One', cursive;
+.fr-sitemap > ul,
+.social-icons {
+  padding: 5%;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-sitemap {
+  padding-bottom: 30px;
+}
+
+.footer-titre {
+  padding-bottom: 15px;
 }
 
 .social-container {
-  background: #434343;
-  padding: 4px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+  padding-bottom: 30px;
 }
 .social-follow {
   text-align: center;
+  font-family: 'Leckerli One', cursive;
+  color: #333;
 }
+
 .social-icons {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 a.social {
   margin: 0 10px;
@@ -24,7 +53,9 @@ a.social:hover {
   transform: translateY(-2px);
 }
 .copyright {
-  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 a.youtube {
   color: #eb3223;
