@@ -7,7 +7,7 @@ function Team() {
       <article className='team-history'>
         <div className='team-presentation'>
           <h1>Présentation de l'équipe</h1>
-          <p>Les bras cassés</p>
+          <p>Team Philibert de Montalembert</p>
         </div>
       </article>
 

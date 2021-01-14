@@ -19,12 +19,10 @@
 #filter-btn {
   margin: 0 15px;
   padding: 5px 10px;
-
   background-color: #333;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -32,12 +30,10 @@
 #sort-btn {
   margin: 0 15px;
   padding: 5px 10px;
-
   background-color: #333;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -78,10 +74,19 @@
 /* VERSION DESKTOP */
 
 @media only screen and (min-width: 1085px) {
-  .emotions {
+  .emotion {
+    text-align: center;
+  }
+
+  .emotions-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px 40px;
+  }
+
+  .emotion-pic {
+    max-width: 250px;
+    padding: 10px 10px;
   }
 }

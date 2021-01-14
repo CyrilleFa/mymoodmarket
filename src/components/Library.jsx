@@ -48,7 +48,7 @@ class Library extends React.Component {
               id={product.id}
               name={product.name}
               image_url={product.image_url}
-              audio_url={product.audio_url}
+              full_audio_url={product.full_audio_url}
             />
           ))}
         </div>
@@ -58,7 +58,7 @@ class Library extends React.Component {
 
   render() {
     return (
-      <main>
+      <main className='productlist-container'>
         <h1>Bibliothèque de sons</h1>
         <p>Vos sons téléchargés :</p>
         {this.renderResults()}

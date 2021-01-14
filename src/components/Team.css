@@ -9,7 +9,9 @@
 }
 
 .team-presentation p {
-  text-align: justify;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 .team-presentation h1 {
@@ -28,6 +30,8 @@
   width: 100%;
   margin: auto;
   color: #323639;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
 }
 
 .team-content {

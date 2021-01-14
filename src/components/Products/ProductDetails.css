@@ -5,3 +5,8 @@
 .hideButton {
   display: none;
 }
+
+.product-details-container > h3 {
+  font-family: 'Leckerli One', cursive;
+  font-style: italic;
+}

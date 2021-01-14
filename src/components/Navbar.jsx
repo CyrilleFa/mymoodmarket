@@ -74,21 +74,7 @@ class Navbar extends React.Component {
               </span>
             </Link>
           </li>
-          <li className={navItemActive}>
-            <Link
-              to='/basket'
-              className={navLinkActive}
-              onClick={() => {
-                const newRollMenu = !active;
-                this.setState({ active: newRollMenu });
-              }}
-            >
-              Mon Panier{' '}
-              <span role='img' aria-label='emoji'>
-                🛒
-              </span>
-            </Link>
-          </li>
+
           <li className={navItemActive}>
             <Link
               to='/team'

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 import axios from 'axios';
 import './ProductDetails.css';
 
@@ -50,8 +51,15 @@ class ProductDetails extends React.Component {
       <main>
         <h1>{details.name}</h1>
         <img alt={details.name} src={details.image_url} />
-        <div className='playerAudio'>Lecteur audio</div>
         <h2>{`Prix: ${details.price} €`}</h2>
+        <ReactPlayer
+          className='player-song'
+          url={details.audio_url}
+          width='250px'
+          height='75px'
+          playing={false}
+          controls={true}
+        />
         <button
           type='button'
           className={isOwned ? 'hideButton' : 'buyButton'}

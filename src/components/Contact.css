@@ -20,7 +20,8 @@ textarea {
 }
 
 .ContactForm {
-  background-color: #f88360;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
 }
 
 .ContactForm textarea {
@@ -48,7 +49,7 @@ textarea {
 
   .contactform-container {
     width: 40%;
-    background-color: #e4e4e4;
+    background-color: #f88360;
     padding: 1.25em;
     margin-bottom: 50px;
     border-radius: 5px;
