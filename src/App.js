@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Slogan from './components/Homepage/Slogan';
@@ -17,6 +18,11 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>My Mood Market : Accueil</title>
+        <link rel='canonical' href='https://mymoodmarket.netlify.app/' />
+      </Helmet>
       <Navbar />
       <Switch>
         <Route exact path='/'>

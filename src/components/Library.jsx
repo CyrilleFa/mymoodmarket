@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ProductOwned from './Products/ProductOwned';
+import { Helmet } from 'react-helmet';
 import './Products/ProductList.css';
 
 class Library extends React.Component {
@@ -60,6 +61,11 @@ class Library extends React.Component {
   render() {
     return (
       <main className='productlist-container'>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>Ma bibliothèque de sons / My Mood Market</title>
+          <link rel='canonical' href='https://mymoodmarket.netlify.app/' />
+        </Helmet>
         <h1>Bibliothèque de sons</h1>
         <p className='sort-btn'>Vos sons téléchargés :</p>
         {this.renderResults()}

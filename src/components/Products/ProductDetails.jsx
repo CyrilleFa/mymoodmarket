@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import './ProductDetails.css';
 
@@ -49,6 +50,11 @@ class ProductDetails extends React.Component {
     const { details, isOwned, id } = this.state;
     return (
       <main className='product-details-container'>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>{`Emotion ${details.name} / My Mood Market`} </title>
+          <link rel='canonical' href='https://mymoodmarket.netlify.app/' />
+        </Helmet>
         <h1>{details.name}</h1>
         <img alt={details.name} src={details.image_url} />
         <h2 className='price'>{`Prix: ${details.price} €`}</h2>

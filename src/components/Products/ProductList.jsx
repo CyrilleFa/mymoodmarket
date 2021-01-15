@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Product from './Product';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import './ProductList.css';
 
@@ -70,6 +71,11 @@ class ProductList extends React.Component {
     const { sortedList, categories } = this.state;
     return (
       <main className='productlist-container'>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>Toutes nos émotions en stock / My Mood Market</title>
+          <link rel='canonical' href='https://mymoodmarket.netlify.app/' />
+        </Helmet>
         <h1>Toutes nos émotions en stock</h1>
         <section className='btn-container'>
           <button className='sort-btn' id='menu-filtre'>
