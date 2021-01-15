@@ -10,11 +10,29 @@ class ProductList extends React.Component {
     this.state = {
       filter: null,
       products: [],
+      categories: [],
+      sortedList: [],
     };
+    this.sortList = this.sortList.bind(this);
+    this.resetList = this.resetList.bind(this);
   }
 
   componentDidMount() {
     this.getRandomProductList();
+    this.getCategories();
+  }
+
+  getCategories() {
+    const host = process.env.REACT_APP_API_HOST;
+    console.log(host);
+    axios
+      .get(`${host}/api/categories`)
+      .then((res) => res.data)
+      .then((data) => {
+        this.setState({
+          categories: data,
+        });
+      });
   }
 
   getRandomProductList() {
@@ -26,21 +44,57 @@ class ProductList extends React.Component {
       .then((data) => {
         this.setState({
           products: data,
+          sortedList: data,
         });
       });
   }
 
-  render() {
+  sortList(event) {
+    const id = event.target.value;
     const { products } = this.state;
+    // eslint-disable-next-line eqeqeq
+    const array = products.filter((product) => product.category_id == id);
+    this.setState({
+      sortedList: array,
+    });
+  }
+
+  resetList() {
+    const { products } = this.state;
+    this.setState({
+      sortedList: products,
+    });
+  }
+
+  render() {
+    const { sortedList, categories } = this.state;
     return (
       <main className='productlist-container'>
         <h1>Toutes nos émotions en stock</h1>
         <section className='btn-container'>
-          <button id='filter-btn'>Trier</button>
-          <button id='sort-btn'>Catégories</button>
+          <button className='sort-btn' id='menu-filtre'>
+            Filtres{' '}
+          </button>
+          <ul className='filters'>
+            <button type='button' onClick={this.resetList} id='filter-btn'>
+              Tous
+            </button>
+            {categories.map((categorie) => (
+              <li>
+                <button
+                  value={categorie.id}
+                  type='button'
+                  onClick={this.sortList}
+                  className='sort-btn'
+                >
+                  {categorie.category_name}
+                </button>
+              </li>
+            ))}
+          </ul>
         </section>
         <section className='emotions-list'>
-          {products.map((product) => (
+          {sortedList.map((product) => (
             <Link to={`/products/${product.name}-${product.id}`}>
               <Product
                 key={product.id}

@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ProductOwned from './Products/ProductOwned';
+import './Products/ProductList.css';
 
 class Library extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class Library extends React.Component {
     const { productsOwned } = this.state;
     if (productsOwned) {
       return (
-        <div>
+        <div className='sounds-container'>
           {productsOwned.map((product) => (
             <ProductOwned
               key={product.id}
@@ -60,7 +61,7 @@ class Library extends React.Component {
     return (
       <main className='productlist-container'>
         <h1>Bibliothèque de sons</h1>
-        <p>Vos sons téléchargés :</p>
+        <p className='sort-btn'>Vos sons téléchargés :</p>
         {this.renderResults()}
       </main>
     );

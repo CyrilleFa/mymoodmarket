@@ -13,7 +13,7 @@
   background-size: cover;
   padding: 20px 0;
   background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  background-image: linear-gradient(0deg, #3eecac 0%, #ee74e1 100%);
 }
 
 .header-title {
@@ -37,9 +37,15 @@
 
   .header-title {
     text-align: center;
-    font-size: 45px;
-    font-family: 'Fredoka One', cursive;
-    color: black;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Calligraffitti';
+    color: #ffc0c0 !important;
+  }
+
+  .header-title:hover {
+    text-shadow: 3px 3px black;
+    cursor: pointer;
   }
 
   .logo-navbar {
@@ -90,7 +96,7 @@
   position: absolute;
   right: 0;
   transition: opacity 0.4s ease-in-out;
-  margin-top: 620px;
+  margin-top: 610px;
   width: 1085px;
   z-index: 3000;
   list-style-type: none;
@@ -101,9 +107,9 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 30px 20px;
+  padding: 40px 0;
   background-color: rgb(22, 22, 22);
-  transition: filter 400ms;
+  transition: filter ease-in-out 400ms;
   font-size: 20px;
   overflow: hidden;
 }
@@ -111,11 +117,10 @@
 .nav-link-item-active {
   color: white;
   text-decoration: none;
-  margin: 0;
 }
 
 .nav-link-item-active:hover {
-  color: rgb(109, 109, 109);
+  color: black;
 }
 
 /* Fixing menu */
@@ -144,14 +149,15 @@
   .nav-list-inactive {
     font-family: 'Duru Sans', sans-serif;
     width: 100%;
-    height: 22%;
-    margin-top: 297px;
+    height: 20%;
+    margin-top: 300px;
     display: flex;
     justify-content: space-evenly;
     position: absolute;
     background-size: cover;
     list-style-type: none;
     opacity: 1;
+    background-color: #509895;
   }
 
   ul {
@@ -160,30 +166,37 @@
 
   .nav-list-item-active,
   .nav-list-item-inactive {
-    display: block;
-    padding: 11px 18px;
+    padding: 18px 18px;
     font-size: 20px;
-    font-family: 'Pridi', serif;
-    background-color: unset;
   }
 
   .nav-list-item-active:hover,
   .nav-list-item-inactive:hover {
     text-decoration: none;
+    color: antiquewhite;
+    border-bottom: antiquewhite 5px solid;
   }
+
   .nav-link-item-inactive > a {
     text-decoration: none;
   }
 
   .nav-link,
-  .nav-link-item:hover,
   .nav-link-item:visited,
   .nav-link-item-active,
   .nav-link-item-inactive {
     font-family: 'Duru Sans', sans-serif;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: #323639;
+    padding: 0px 25px;
+    color: black;
     text-decoration: unset;
+  }
+
+  .nav-list-item-active {
+    background-color: unset;
+    color: antiquewhite;
+  }
+
+  .nav-link-item-inactive:hover {
+    color: antiquewhite;
   }
 }

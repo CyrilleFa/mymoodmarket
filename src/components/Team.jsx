@@ -7,7 +7,7 @@ function Team() {
       <article className='team-history'>
         <div className='team-presentation'>
           <h1>Présentation de l'équipe</h1>
-          <p>Team Philibert de Montalembert</p>
+          <p className='sort-btn'>Team Philibert de Montalembert</p>
         </div>
       </article>
 
@@ -18,9 +18,7 @@ function Team() {
           title='Cédric Priouret'
         />
         <h2>Cédric Priouret</h2>
-        <p className='left-text'>
-          J'en peux plus de ma team, aidez moi s'il vous plaît
-        </p>
+        <p className='left-text'>J'ai bossé tout seul sur ce projet.</p>
         <div className='social-icons-team'>
           <li>
             <a href='https://github.com/CedricPriouret'>
@@ -41,9 +39,7 @@ function Team() {
           title='Matisse Famularo'
         />
         <h2>Mathias Famularo</h2>
-        <p className='right-text'>
-          Expert comptable.(Confiez-moi votre argent, je saurai en prendre soin)
-        </p>
+        <p className='right-text'>Expert comptable backend.</p>
         <div className='social-icons-team'>
           <li>
             <a href='https://github.com/MatisseFMLR'>
@@ -65,8 +61,7 @@ function Team() {
         />
         <h2>Justine Pain</h2>
         <p className='left-text'>
-          Donnez moi de l'argent svp je veux manger des pizzas(en vrai je
-          préfère les sandwich triangle sur l'aire d'autoroute).
+          J'aime manger des sandwichs sur l'autoroute et dans les aéroports.
         </p>
         <div className='social-icons-team'>
           <li>
@@ -88,7 +83,9 @@ function Team() {
           title='Cyrille Fabre'
         />
         <h2>Cyrille Fabre</h2>
-        <p className='right-text'>Blagues nulles à chier. (j'avoue)</p>
+        <p className='right-text'>
+          Je fais presque toujours des blagues nulles.
+        </p>
         <div className='social-icons-team'>
           <li>
             <a href='https://github.com/Cissou13'>

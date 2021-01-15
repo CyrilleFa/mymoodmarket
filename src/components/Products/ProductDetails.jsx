@@ -48,18 +48,20 @@ class ProductDetails extends React.Component {
   render() {
     const { details, isOwned, id } = this.state;
     return (
-      <main>
+      <main className='product-details-container'>
         <h1>{details.name}</h1>
         <img alt={details.name} src={details.image_url} />
-        <h2>{`Prix: ${details.price} €`}</h2>
-        <ReactPlayer
-          className='player-song'
-          url={details.audio_url}
-          width='250px'
-          height='75px'
-          playing={false}
-          controls={true}
-        />
+        <h2 className='price'>{`Prix: ${details.price} €`}</h2>
+        <div className='player-song'>
+          <ReactPlayer
+            url={details.audio_url}
+            width='250px'
+            height='75px'
+            wrapper='div'
+            playing={false}
+            controls={true}
+          />
+        </div>
         <button
           type='button'
           className={isOwned ? 'hideButton' : 'buyButton'}
@@ -69,7 +71,7 @@ class ProductDetails extends React.Component {
         >
           Acheter
         </button>
-        <h3>{details.description}</h3>
+        <h3>"{details.description}"</h3>
       </main>
     );
   }

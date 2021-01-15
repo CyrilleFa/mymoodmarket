@@ -1,5 +1,5 @@
 .contactform-container {
-  padding: 10px 90px;
+  padding: 10px 190px;
 }
 
 .contactform-container input,
@@ -25,8 +25,8 @@ textarea {
 }
 
 .ContactForm textarea {
-  height: 150px;
-  width: 195px;
+  height: 160px;
+  width: 200px;
 }
 
 .contactform-title h2 {

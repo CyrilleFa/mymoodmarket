@@ -1,12 +1,49 @@
 .buyButton {
-  color: green;
+  color: #1481db;
+  background-color: #f3efe0;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  width: 250px;
+  font-size: 20px;
+  padding: 3px;
 }
 
 .hideButton {
   display: none;
 }
 
-.product-details-container > h3 {
+.product-details-container {
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+
+.product-details-container {
+  text-align: center;
+}
+
+.product-details-container > h1 {
+  font-size: 40px;
+  padding-top: 30px;
   font-family: 'Leckerli One', cursive;
+}
+
+.product-details-container > h3 {
   font-style: italic;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.product-details-container img {
+  margin: 40px 0;
+}
+
+.player-song {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  text-shadow: 1px 1px 1px #017af1;
 }

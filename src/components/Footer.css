@@ -1,29 +1,30 @@
 .footer-container,
 .copyright {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: rgba(26, 204, 139, 0.76);
-  padding: 30px;
+  padding: 20px;
   color: #e4e4e4;
 }
 
-.fr-sitemap > ul,
-.social-icons {
-  padding: 5%;
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-list {
   list-style-type: none;
+  color: antiquewhite;
+  text-align: center;
 }
 
 .footer-sitemap {
-  padding-bottom: 30px;
+  padding: 18px 15px;
+  margin: 0px 30px;
 }
 
 .footer-titre {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .social-container {
@@ -31,8 +32,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 130px;
-  padding-bottom: 30px;
 }
+
 .social-follow {
   text-align: center;
   font-family: 'Leckerli One', cursive;
@@ -40,6 +41,7 @@
 }
 
 .social-icons {
+  font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,10 +55,11 @@ a.social:hover {
   transform: translateY(-2px);
 }
 .copyright {
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 44%;
+  line-height: 20px;
 }
+
 a.youtube {
   color: #eb3223;
 }
